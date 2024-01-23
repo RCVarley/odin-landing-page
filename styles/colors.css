@@ -1,0 +1,62 @@
+/* Variables */
+:root {
+  --c-one: #1f2937;
+  --c-two: #f9faf8;
+  --c-three: #fff;
+  --c-four: #e5e7eb;
+  --c-five: #3882f6;
+
+  --primary: var(--c-one);
+  --primary-alt: var(--primary);
+  --on-primary: var(--c-two);
+  --on-primary-alt: var(--c-four);
+  
+  --secondary: var(--c-three);
+  --secondary-alt: var(--c-four);
+  --on-secondary: var(--c-one);
+  --on-secondary-alt: var(--on-secondary);
+
+  --tertiary: var(--c-five);
+  --tertiary-alt: var(--tertiary);
+  --on-tertiary: var(--c-two);
+  --on-tertiary-alt: var(--on-tertiary);
+}
+
+.primary {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+
+.primary.alt {
+  background-color: var(--primary);
+}
+
+.primary p.alt {
+  color: var(--on-primary-alt)
+}
+
+.secondary {
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+}
+
+.secondary.alt {
+  background-color: var(--secondary-alt);
+}
+
+.secondary p.alt {
+  color: var(--on-secondary-alt)
+}
+
+.tertiary {
+  background-color: var(--tertiary);
+  color: var(--on-tertiary);
+}
+
+.tertiary.alt {
+  background-color: var(--tertiary-alt);
+}
+
+.tertiary p.alt {
+  color: var(--on-tertiary-alt)
+}
