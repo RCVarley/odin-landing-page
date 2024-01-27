@@ -19,7 +19,7 @@
   --tertiary: var(--c-five);
   --tertiary-alt: var(--tertiary);
   --on-tertiary: var(--c-two);
-  --on-tertiary-alt: var(--on-tertiary);
+  --on-tertiary-alt: var(--c-four);
 }
 
 .primary {
@@ -28,7 +28,7 @@
 }
 
 .primary.alt {
-  background-color: var(--primary);
+  background-color: var(--primary-alt);
 }
 
 .primary p.alt {

@@ -11,24 +11,35 @@
     --max-width: 60rem;
 }
 
-/* Should I make a secondary text class for where there is subtext on the page to inherit the right size from here */
-/* Should I just set size when I get to each one? */
-
-
-* {
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+.debug header {
+    outline: red solid 2px;
+}
+
+.debug main {
+    outline: green solid 2px;
+}
+
+.debug footer {
+    outline: blue solid 2px;
+}
+
 section, footer, header {
-    /* outline: red solid 2px; */
     display: flex;
     justify-content: center;
+}
+
+:where(section, footer, header).row {
+    flex-direction: row;
+}
+
+:where(section, footer, header).column {
+    flex-direction: column;
 }
 
 :where(section, footer, header) > * {
@@ -75,14 +86,8 @@ nav a + a {
     padding-block: var(--s4);
 }
 
-.hero :where(h1, h2, h3, h4, h5) {
-    margin: 0;
-    font-weight: 900;
-}
-
 .hero h1 {
-    font-size: 48px;
-    font-weight: 900;
+    font-size: 3rem;
 }
 
 .hero p {
