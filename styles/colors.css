@@ -10,17 +10,22 @@
   --primary-alt: var(--primary);
   --on-primary: var(--c-two);
   --on-primary-alt: var(--c-four);
+  --on-primary-contrast: var(--c-five);
   
   --secondary: var(--c-three);
   --secondary-alt: var(--c-four);
   --on-secondary: var(--c-one);
   --on-secondary-alt: var(--on-secondary);
+  --on-secondary-contrast: var(--c-five);
 
   --tertiary: var(--c-five);
   --tertiary-alt: var(--tertiary);
   --on-tertiary: var(--c-two);
   --on-tertiary-alt: var(--c-four);
+  --on-tertiary-contrast: var(--c-one);
 }
+
+/* Primary */
 
 .primary {
   background-color: var(--primary);
@@ -31,9 +36,20 @@
   background-color: var(--primary-alt);
 }
 
-.primary p.alt {
+.primary .alt {
   color: var(--on-primary-alt)
 }
+
+.primary a:hover {
+  color: var(--tertiary);
+}
+
+.primary a:hover,
+.primary .contrast {
+  color: var(--on-primary-contrast);
+}
+
+/* Secondary */
 
 .secondary {
   background-color: var(--secondary);
@@ -44,9 +60,16 @@
   background-color: var(--secondary-alt);
 }
 
-.secondary p.alt {
+.secondary .alt {
   color: var(--on-secondary-alt)
 }
+
+.secondary a:hover,
+.secondary .contrast {
+  color: var(--on-secondary-contrast);
+}
+
+/* Tertiary */
 
 .tertiary {
   background-color: var(--tertiary);
@@ -57,6 +80,11 @@
   background-color: var(--tertiary-alt);
 }
 
-.tertiary p.alt {
+.tertiary .alt {
   color: var(--on-tertiary-alt)
+}
+
+.tertiary a:hover,
+.tertiary .contrast {
+  color: var(--on-tertiary-contrast);
 }

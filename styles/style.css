@@ -72,11 +72,6 @@ nav a {
     color: inherit;
 }
 
-/* Questionable */
-.primary a:hover {
-    color: var(--on-primary-alt);
-}
-
 nav a + a {
     margin-inline-start: var(--s1);
 }
