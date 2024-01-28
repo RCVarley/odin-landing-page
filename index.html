@@ -25,10 +25,16 @@
     <main>
         <section class="primary row">
             <div class="hero">
-                <div class="hero__text">
-                    <h1>This website is awesome</h1>
-                    <p class="alt">This website has some subtext that goes here under the main title. It's a smaller font and the color is a lower contrast</p>
-                    <button type="button" class="tertiary">Sign up</button>
+                <div class="hero__content">
+                    <h1 class="hero__heading">
+                        This website is awesome
+                    </h1>
+                    <p class="hero__text low-contrast">
+                        This website has some subtext that goes here under the main title. It's a smaller font and the color is a lower contrast
+                    </p>
+                    <button class="tertiary">
+                        Sign up
+                    </button>
                 </div>
                 <div class="hero__image">
                     <!-- Photo by <a href="https://unsplash.com/@neom?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">NEOM</a> on <a href="https://unsplash.com/photos/a-couple-of-people-standing-on-top-of-a-mountain-0SUho_B0nus?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
@@ -42,44 +48,65 @@
             <h2>Some random information.</h2>
 
             <div class="gallery">
-                <div>
-                    <div>&#128187</div>
-                    <p>This is some subtext under an illustration or image</p>
+                <div class="gallery__item">
+                    <div class="gallery__image">
+                        &#128187
+                    </div>
+                    <p class="gallery__text">
+                        This is some subtext under an illustration or image
+                    </p>
                 </div>
-                <div>
-                    <div>&#128357</div>
-                    <p>This is some subtext under an illustration or image</p>
+                <div class="gallery__item">
+                    <div class="gallery__image">
+                        &#128357
+                    </div>
+                    <p class="gallery__text">
+                        This is some subtext under an illustration or image
+                    </p>
                 </div>
-                <div>
-                    <div>&#9978</div>
-                    <p>This is some subtext under an illustration or image</p>
+                <div class="gallery__item">
+                    <div class="gallery__image">
+                        &#9978
+                    </div>
+                    <p class="gallery__text">
+                        This is some subtext under an illustration or image
+                    </p>
                 </div>
-                <div>
-                    <div>&#127968</div>
-                    <p>This is some subtext under an illustration or image</p>
+                <div class="gallery__item">
+                    <div class="gallery__image">
+                        &#127968
+                    </div>
+                    <p class="gallery__text">
+                        This is some subtext under an illustration or image
+                    </p>
                 </div>
             </div>
         </section>
 
         <section class="secondary alt">
             <div class="testimonial">
-                <p class="quote">
+                <p class="testimonial__quote">
                     This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space,
                     or maybe people will actually read it. Who knows? All I know is that it looks nice.
                 </p>
-                <p class="author">-Thor, God of Thunder</p>
+                <p class="testimonial__author">
+                    -Thor, God of Thunder
+                </p>
             </div>
         </section>
         
         <section class="secondary">
             <div class="banner tertiary">
-                <div>
-                    <h3>Call to action! It's time!</h3>
-                    <p>Sign up for our product by clicking that button right over there!</p>
-                </div>
-                <div>
-                    <button type="button">Sign up</button>
-                </div>
+                <h3 class="banner__heading">
+                    Call to action! It's time!
+                </h3>
+                <p class="banner__content">
+                    Sign up for our product by clicking that button right over there!
+                </p>
+
+                <button type="banner__button">
+                    Sign up
+                </button>
             </div>
         </section>
     </main>
