@@ -1,6 +1,9 @@
 /* Variables */
 :root {
     --ratio: 1.5;
+
+    /* Size */
+    --s-3: calc(var(--s-2) / var(--ratio));
     --s-2: calc(var(--s-1) / var(--ratio));
     --s-1: calc(var(--s1) / var(--ratio));
     --s0: 0;
@@ -9,7 +12,21 @@
     --s3: calc(var(--s2) * var(--ratio));
     --s4: calc(var(--s3) * var(--ratio));
     --s5: calc(var(--s4) * var(--ratio));
-    --max-width: 60rem;
+
+    /* Font Size */
+    --fs-2: calc(var(--fs-1) / var(--ratio));
+    --fs-1: calc(var(--fs1) / var(--ratio));
+    --fs1: calc(0.75rem + 0.5vw);
+    --fs2: calc(var(--fs1) * var(--ratio));
+    --fs3: calc(var(--fs2) * var(--ratio));
+    --fs4: calc(var(--fs3) * var(--ratio));
+    --fs5: calc(var(--fs4) * var(--ratio));
+
+    --content-max-width: calc(50rem + 16vw);
+    --measure: 60ch;
+
+    font-size: var(--fs1);
+}
 }
 
 body {
