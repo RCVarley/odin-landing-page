@@ -57,25 +57,19 @@ body {
 
 section, footer, header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 :where(section, footer, header).row {
     flex-direction: row;
-}
-
-:where(section, footer, header).column {
-    flex-direction: column;
+    justify-content: center;
+    align-items: unset;
 }
 
 :where(section, footer, header) > * {
-    /* outline: red solid 2px; */
-    max-width: var(--max-width);
-    justify-content: center;
-    margin: var(--s1);
-    width: 100%;
+    padding: var(--s1);
 }
-
 header .wrapper {
     display: flex;
     justify-content: space-between;
