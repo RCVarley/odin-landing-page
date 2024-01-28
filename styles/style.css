@@ -98,25 +98,24 @@ nav a + a {
     margin-inline-start: var(--s1);
 }
 
+/* Hero */
 .hero {
     display: flex;
-    gap: var(--s2);
+    gap: var(--s3);
     padding-block: var(--s4);
 }
 
-.hero h1 {
-    font-size: 3rem;
-}
-
-.hero p {
-    margin-block-start: 0;
-    margin-block-end: var(--s-1);
-    font-size: 18px;
-}
-
-.hero__text {
+.hero__content {
     flex: 1;
     padding-block: var(--s1);
+}
+
+.hero__content :last-child {
+    margin-block-start: var(--s-1);
+}
+
+.hero__heading {
+    font-size: var(--fs3);
 }
 
 .hero__image {
