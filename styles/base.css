@@ -12,11 +12,11 @@
 }
 /*
   Typographic tweaks!
-  3. Add accessible line-height
+  3. Add accessible line-height (doesn't work well so I removed it)
   4. Improve text rendering
 */
 body {
-  line-height: calc(1em + 0.5rem);
+  /* line-height: calc(1em + 0.5rem); */
   -webkit-font-smoothing: antialiased;
 }
 
