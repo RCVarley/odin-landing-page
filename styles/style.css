@@ -12,15 +12,17 @@
     --s3: calc(var(--s2) * var(--ratio));
     --s4: calc(var(--s3) * var(--ratio));
     --s5: calc(var(--s4) * var(--ratio));
+    --s6: calc(var(--s5) * var(--ratio));
 
     /* Font Size */
-    --fs-2: calc(var(--fs-1) / var(--ratio));
-    --fs-1: calc(var(--fs1) / var(--ratio));
+    --font-ratio: 1.23;
+    --fs-2: calc(var(--fs-1) / var(--font-ratio));
+    --fs-1: calc(var(--fs1) / var(--font-ratio));
     --fs1: calc(0.75rem + 0.5vw);
-    --fs2: calc(var(--fs1) * var(--ratio));
-    --fs3: calc(var(--fs2) * var(--ratio));
-    --fs4: calc(var(--fs3) * var(--ratio));
-    --fs5: calc(var(--fs4) * var(--ratio));
+    --fs2: calc(var(--fs1) * var(--font-ratio));
+    --fs3: calc(var(--fs2) * var(--font-ratio));
+    --fs4: calc(var(--fs3) * var(--font-ratio));
+    --fs5: calc(var(--fs4) * var(--font-ratio));
 
     --content-max-width: calc(50rem + 16vw);
     --measure: 60ch;
