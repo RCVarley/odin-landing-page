@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet", href="styles/base.css">
+    <link rel="stylesheet", href="styles/colors.css">
+    <link rel="stylesheet", href="styles/style.css">
+</head>
+<!-- <body class="debug"> -->
+<body>
+    <style>
+        section > button {
+            width: 8rem;
+        }
+
+        section > button + button {
+            margin-top: 0.5rem;
+        }
+    </style>
+    <header class="primary">
+        <div class="wrapper">
+            <div class="logo">Header Logo</div>
+            <nav>
+                <a href=".">header link one</a>
+                <a href=".">header link two</a>
+                <a href=".">header link three</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="primary">
+            <button>Neutral</button>
+            <button class="primary">Primary</button>
+            <button class="secondary">Secondary</button>
+            <button class="tertiary">Tertiary</button>
+        </section>
+        <section class="secondary">
+            <button>Neutral</button>
+            <button class="primary">Primary</button>
+            <button class="secondary">Secondary</button>
+            <button class="tertiary">Tertiary</button>
+        </section>
+        <section class="tertiary">
+            <button>Neutral</button>
+            <button class="primary">Primary</button>
+            <button class="secondary">Secondary</button>
+            <button class="tertiary">Tertiary</button>
+        </section>
+    </main>
+
+    <footer class="primary" style="height: 100%;">
+        <div class="wrapper">
+            <p class="copyright">
+                Copyright &copy The Odin Project 2021
+            </p>
+        </div>
+    </footer>
+    <div style="display: none; position: absolute; left: 0; right: 0; top: -15.5rem; bottom: 0; opacity: 0.1; max-inline-size: none;">
+        <img src="./project-resources/finished_design.png" style="width: 100%;"/>
+    </div>
+</body>
+</html>
