@@ -25,8 +25,11 @@
   --on-tertiary-hc: var(--c-one);
 }
 
-/* Primary */
+body {
+  background-color: var(--primary);
+}
 
+/* Primary */
 .primary {
   background-color: var(--primary);
   color: var(--on-primary);
@@ -40,17 +43,13 @@
   color: var(--on-primary-lc)
 }
 
-.primary a:hover {
-  color: var(--tertiary);
-}
-
 .primary a:hover,
 .primary .contrast {
   color: var(--on-primary-hc);
+  border-color: var(--on-primary-hc);
 }
 
 /* Secondary */
-
 .secondary {
   background-color: var(--secondary);
   color: var(--on-secondary);
@@ -67,10 +66,10 @@
 .secondary a:hover,
 .secondary .contrast {
   color: var(--on-secondary-hc);
+  border-color: var(--on-secondary-hc);
 }
 
 /* Tertiary */
-
 .tertiary {
   background-color: var(--tertiary);
   color: var(--on-tertiary);
@@ -87,4 +86,94 @@
 .tertiary a:hover,
 .tertiary .contrast {
   color: var(--on-tertiary-hc);
+}
+
+/* Button - Level 0 */
+button {
+  background-color: inherit;
+  border-color: inherit;
+  color: inherit;
+}
+
+/* Button - Level 1 */
+.primary button {
+  background-color: var(--on-primary);
+  color: var(--primary);
+  border-color: var(--on-primary);
+}
+
+.primary button:hover {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+
+.secondary button {
+  background-color: var(--on-secondary);
+  color: var(--secondary);
+  border-color: var(--on-secondary);
+}
+
+.secondary button:hover {
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+}
+
+.tertiary button {
+  background-color: var(--on-tertiary);
+  color: var(--tertiary);
+  border-color: var(--on-tertiary);
+}
+
+.tertiary button:hover {
+  background-color: var(--tertiary);
+  color: var(--on-tertiary);
+}
+
+/* Button - Level 2 */
+/* Button - Primary */
+button.primary {
+  background-color: var(--primary);
+  color: var(--on-primary);
+  border-color: var(--primary);
+}
+
+.primary button.primary {
+  border-color: var(--on-primary);
+}
+
+button.primary:hover {
+  background-color: var(--on-primary);
+  color: var(--primary)
+}
+
+/* Button - Secondary */
+button.secondary {
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+  border-color: var(--secondary);
+}
+
+.secondary button.secondary {
+  border-color: var(--on-secondary);
+}
+
+button.secondary:hover {
+  background-color: var(--on-secondary);
+  color: var(--secondary)
+}
+
+/* Button - Tertiary */
+button.tertiary {
+  background-color: var(--tertiary);
+  color: var(--on-tertiary);
+  border-color: var(--tertiary);
+}
+
+.tertiary button.tertiary {
+  border-color: var(--on-tertiary);
+}
+
+button.tertiary:hover {
+  background-color: var(--on-tertiary);
+  color: var(--tertiary)
 }
