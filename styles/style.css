@@ -100,11 +100,11 @@ h1 {
 }
 
 /* Controls */
-
 button {
-    border: none;
+    border-style: solid;
     border-radius: 0.3rem;
     padding: 0.3rem 1.2rem;
+    font-weight: 600;
 }
 
 /* Header */
