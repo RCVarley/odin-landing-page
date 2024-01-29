@@ -23,6 +23,8 @@
   --on-tertiary: var(--c-two);
   --on-tertiary-lc: var(--c-four);
   --on-tertiary-hc: var(--c-one);
+
+  background-color: var(--primary);
 }
 
 body {
