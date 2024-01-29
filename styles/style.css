@@ -73,6 +73,32 @@ footer {
     padding: var(--s1);
 }
 
+/* Fonts */
+h5 {
+    font-size: var(--fs1);
+    font-weight: 500;
+}
+
+h4 {
+    font-size: var(--fs2);
+    font-weight: 600;
+}
+
+h3 {
+    font-size: var(--fs3);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: var(--fs4);
+    font-weight: 800;
+}
+
+h1 {
+    font-size: var(--fs5);
+    font-weight: 900;
+}
+
 /* Controls */
 
 button {
