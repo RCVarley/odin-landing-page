@@ -8,9 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
     
     <link rel="stylesheet", href="styles/base.css">
-    <link rel="stylesheet", href="styles/style.css">
     <link rel="stylesheet", href="styles/colors.css">
+    <link rel="stylesheet", href="styles/style.css">
 </head>
+<!-- <body class="debug"> -->
 <body>
     <header class="primary">
         <div class="wrapper">
@@ -32,7 +33,7 @@
                     <p class="hero__text low-contrast">
                         This website has some subtext that goes here under the main title. It's a smaller font and the color is a lower contrast
                     </p>
-                    <button class="tertiary">
+                    <button>
                         Sign up
                     </button>
                 </div>
@@ -44,12 +45,12 @@
             </div>
         </section>
 
-        <section class="secondary">
-            <h2>Some random information.</h2>
+        <section class="secondary information">
+            <h2 class="information-heading">Some random information.</h2>
 
-            <div class="gallery">
+            <div class="gallery low-contrast">
                 <div class="gallery__item">
-                    <div class="gallery__image">
+                    <div class="gallery__image contrast">
                         &#128187
                     </div>
                     <p class="gallery__text">
@@ -57,7 +58,7 @@
                     </p>
                 </div>
                 <div class="gallery__item">
-                    <div class="gallery__image">
+                    <div class="gallery__image contrast">
                         &#128357
                     </div>
                     <p class="gallery__text">
@@ -65,7 +66,7 @@
                     </p>
                 </div>
                 <div class="gallery__item">
-                    <div class="gallery__image">
+                    <div class="gallery__image contrast">
                         &#9978
                     </div>
                     <p class="gallery__text">
@@ -73,7 +74,7 @@
                     </p>
                 </div>
                 <div class="gallery__item">
-                    <div class="gallery__image">
+                    <div class="gallery__image contrast">
                         &#127968
                     </div>
                     <p class="gallery__text">
@@ -96,15 +97,17 @@
         </section>
         
         <section class="secondary">
-            <div class="banner tertiary">
-                <h3 class="banner__heading">
-                    Call to action! It's time!
-                </h3>
-                <p class="banner__content">
-                    Sign up for our product by clicking that button right over there!
-                </p>
+            <div class="cta tertiary">
+                <div class="cta__content">
+                    <h2 class="cta__heading">
+                        Call to action! It's time!
+                    </h2>
+                    <p class="cta__content">
+                        Sign up for our product by clicking that button right over there!
+                    </p>
+                </div>
 
-                <button type="banner__button">
+                <button class="cta__button tertiary">
                     Sign up
                 </button>
             </div>
@@ -112,11 +115,9 @@
     </main>
 
     <footer class="primary">
-        <div class="wrapper">
-            <p class="copyright">
-                Copyright &copy The Odin Project 2021
-            </p>
-        </div>
+        <p>
+            Copyright &copy The Odin Project 2021
+        </p>
     </footer>
 </body>
 </html>
