@@ -48,19 +48,12 @@ body {
     padding: 0;
 }
 
-.debug header {
-    outline: red solid 2px;
-}
-
-.debug main {
-    outline: green solid 2px;
-}
-
-.debug footer {
-    outline: blue solid 2px;
+section {
+    padding-block: var(--s5);
 }
 
 section, footer, header {
+    padding-inline: var(--s1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,6 +66,10 @@ section, footer, header {
 }
 
 :where(section, footer, header) > * {
+    padding-block: var(--s1);
+}
+
+footer {
     padding: var(--s1);
 }
 
