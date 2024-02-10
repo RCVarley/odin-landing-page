@@ -1,29 +1,36 @@
-/* Variables */
 :root {
+  /* Base Color Pallet */
   --c-one: #1f2937;
   --c-two: #f9faf8;
   --c-three: #fff;
   --c-four: #e5e7eb;
   --c-five: #3882f6;
 
+  /* The signature color of the site */
   --primary: var(--c-one);
   --primary-alt: var(--primary);
   --on-primary: var(--c-two);
   --on-primary-lc: var(--c-four);
   --on-primary-hc: var(--c-five);
   
+  /* The second most common color on the site */
   --secondary: var(--c-three);
   --secondary-alt: var(--c-four);
   --on-secondary: var(--c-one);
   --on-secondary-lc: var(--on-secondary);
   --on-secondary-hc: var(--c-five);
 
+  /* A sparingly used standout color */
   --tertiary: var(--c-five);
   --tertiary-alt: var(--tertiary);
   --on-tertiary: var(--c-two);
   --on-tertiary-lc: var(--c-four);
-  --on-tertiary-hc: var(--c-one);
+  --on-tertiary-hc: var(--c-three);
 
+  /* 
+   * Set the background color so that when you scroll out of bounds
+   * on mobile, it matches the sites color
+   */
   background-color: var(--primary);
 }
 
@@ -90,14 +97,16 @@ body {
   color: var(--on-tertiary-hc);
 }
 
-/* Button - Level 0 */
+
+/* Button specific styles */
+/* Button - Level 0 (the lowest priority selector) */
 button {
   background-color: inherit;
   border-color: inherit;
   color: inherit;
 }
 
-/* Button - Level 1 */
+/* Button - Level 1 (the lowest priority 2 x Specifity selector)  */
 .primary button {
   background-color: var(--on-primary);
   color: var(--primary);
@@ -131,7 +140,10 @@ button {
   color: var(--on-tertiary);
 }
 
-/* Button - Level 2 */
+/* 
+ * Button - Level 2 
+ * (The highest priority selectors, even if some of them are 2 x Specificity) 
+*/
 /* Button - Primary */
 button.primary {
   background-color: var(--primary);
